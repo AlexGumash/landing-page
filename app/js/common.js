@@ -3,8 +3,11 @@ $(function() {
 		loop:true,
 		margin:10,
 		nav:false,
-		dotsData: true,
-		dotsContainer: '.owl-dots',
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplaySpeed: 200,
+		autoplayHoverPause: true,
 		responsive:{
 				0:{
 						items:1
@@ -29,7 +32,4 @@ $(function() {
 			owl.trigger('next.owl.carousel');
 	});
 
-	$('.owl-dot').click(function () {
-  		owl.trigger('to.owl.carousel', [$(this).index(), 300]);
-});
 });
