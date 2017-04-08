@@ -1,0 +1,51 @@
+.slider-buttons
+	width: 600px
+	margin: 0 auto
+	text-align: center
+	padding-bottom: 300px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+	@media screen and (max-width: 1000px)
+		width: 500px
+
+	@media screen and (max-width: 925px)
+		flex-direction: column
+		align-items: center
+
+	@media screen and (max-width: 610px)
+		width: 100%
+
+.button
+	font-family: Open Sans
+	color: #ffffff
+	display: inline-block
+	text-decoration: none
+	width: 225px
+	padding: 15px 0
+	font-size: 13.8px
+	letter-spacing: 0.1px
+	text-transform: uppercase
+	transition: transform ease 0.2s
+
+	@media screen and (max-width: 925px)
+		font-size: 12px
+
+
+
+	&:hover
+		transform: scale(1.1)
+
+.slider__button--1
+	background-color: #e74c3c
+	border: 1px solid #e74c3c
+	box-shadow: 0px 2px 4.8px 0.3px rgba(0, 0, 0, 0.25)
+	margin-right: 30px
+
+	@media screen and (max-width: 925px)
+		margin-right: 0
+		margin-bottom: 15px
+
+.slider__button--2
+	border: 1px solid white

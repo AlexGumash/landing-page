@@ -1,0 +1,39 @@
+.slider__arrow
+	position: absolute
+	width: 45px
+	height: 45px
+	border-radius: 2px
+	background-color: #45576e
+	top: 420px
+	cursor: pointer
+	z-index: 20
+	@media screen and (max-height: 770px)
+			top: 320px
+
+	@media screen and (max-width: 925px)
+			width: 40px
+			height: 40px
+
+	@media screen and (max-width: 700px)
+			display: none
+
+	&:hover
+		background-color: #e74c3c
+
+.slider__arrow--prev
+	left: 80px
+	background-image: url('../img/angle-disabled-left.png')
+	background-repeat: no-repeat
+	background-position: 50% 50%
+
+	&:hover
+		background-image: url('../img/angle-left.png')
+
+.slider__arrow--next
+	right: 80px
+	background-image: url('../img/angle-disabled-right.png')
+	background-repeat: no-repeat
+	background-position: 50% 50%
+
+	&:hover
+		background-image: url('../img/angle-right.png')
