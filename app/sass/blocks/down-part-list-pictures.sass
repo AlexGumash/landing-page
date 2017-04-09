@@ -4,6 +4,25 @@
 	margin: 0 auto 30px auto
 	border: 1px solid #999999
 	border-radius: 2px
+  transition: transform ease 0.4s
+
+
+.image--active
+  transition: all ease 0.4s
+  transform: rotate(45deg)
+  border-color: #e74c3c
+
+.image--disactive
+  transition: all ease 0.4s
+  transform: rotate(0deg)
+
+.sub-image--active
+  transition: transform ease 0.4s
+  transform: rotate(-45deg)
+
+.sub-image--disactive
+  transition: transform ease 0.4s
+  transform: rotate(0deg)
 
 .image--1__sub-image
 	width: 73px
